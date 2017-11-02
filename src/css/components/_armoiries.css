@@ -1,0 +1,76 @@
+/*
+*** Wrapper
+**/
+
+.armoiries-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+/**
+*** Layout
+**/
+
+.armoirie {
+    transform: translateX(-20%);
+    opacity: 0;
+    margin: auto;
+    transition: 3050ms ease-in-out;
+    position: absolute;
+    z-index: -1;
+}
+
+.armoirie.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 0;
+}
+
+
+/**
+*** Date
+**/
+
+.armoirie__date {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+/**
+*** Image
+**/
+
+.armoirie__img-wrapper {
+    text-align: center;
+    width: 100%;
+    height: 35vmax;
+    position: relative;
+
+}
+
+.armoirie__img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/**
+*** Motto
+**/
+
+.armoirie__motto {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.armoirie small {
+    font-style: italic;
+    font-family: "NotoSans";
+}

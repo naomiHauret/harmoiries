@@ -1,0 +1,80 @@
+@keyframes outer-dress {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes dress {
+    from {
+        transform: translateY(-2px);
+    }
+    to {
+        transform: translateY(2px);
+    }
+}
+
+
+@keyframes anchor-2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.99) translateY(2px);
+    }
+}
+#armoirie2-anchor,
+#armoirie2-dress,
+#armoirie2-dress-2,
+#armoirie2-dress-3,
+#armoirie2-dress-4 {
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#armoirie2-anchor {
+    animation-name: anchor-2;
+}
+
+#armoirie2-dress {
+    animation-name: outer-dress;
+}
+
+#armoirie2-dress-2,
+#armoirie2-dress-3,
+#armoirie2-dress-4 {
+    animation-name: dress;
+}
+
+#armoirie2-dress-2,
+#armoirie2-dress-4,
+#armoirie2-anchor {
+    animation-direction: alternate;
+}
+
+#armoirie2-dress,
+#armoirie2-dress-3 {
+    animation-direction: alternate-reverse;
+}
+
+#armoirie2-dress {
+    animation-duration: 2250ms;
+}
+
+#armoirie2-dress-2 {
+    animation-duration: 3050ms;
+}
+
+#armoirie2-dress-3 {
+    animation-duration: 2250ms;
+}
+
+#armoirie2-dress-4 {
+    animation-duration: 2700ms;
+}
+
+#armoirie2-anchor {
+    animation-duration: 500ms;
+}

@@ -1,0 +1,11 @@
+:root {
+    --xs-viewportMax: 767px;
+    --sm-viewportMin: 768px;
+    --md-viewportMin: 992px;
+    --lg-viewportMin: 1140px;
+}
+
+@custom-media --xs (max-width: var(--xs-viewportMax));
+@custom-media --sm (min-width: var(--sm-viewportMin));
+@custom-media --md (min-width: var(--md-viewportMin));
+@custom-media --lg (min-width: var(--lg-viewportMin));

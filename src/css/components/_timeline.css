@@ -1,0 +1,39 @@
+:root {
+    --sizeItem: 35px;
+    --sizeItemMd: 15px;
+}
+
+
+/**
+*** Layout
+**/
+
+.timeline {
+    display: flex;
+    padding: 50px 0 35px;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+}
+
+
+/**
+*** Item
+**/
+
+.timeline__item {
+    width: var(--sizeItemMd);
+    height: var(--sizeItemMd);
+    border-radius: 100%;
+    border: solid 1px currentColor;
+    display: block;
+    margin: 0 35px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+
+.timeline__item.is-active {
+    border-color: transparent;
+    background-color: currentColor;
+}

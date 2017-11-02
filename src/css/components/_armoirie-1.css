@@ -1,0 +1,105 @@
+/**
+*** Armoirie 1
+**/
+
+@keyframes boat-1 {
+    from {
+        transform: translate(1px, 0) rotate(0);
+    }
+    to {
+        transform: translate(-1px, 1px) rotate(1deg)
+    }
+}
+
+@keyframes waves-1 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(2px);
+    }
+}
+
+@keyframes sail-1 {
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
+}
+
+#armoirie1-boat,
+#armoirie1-sail1,
+#armoirie1-sail2,
+#armoirie1-sail3,
+#armoirie1-sail4,
+#armoirie1-sail5,
+#armoirie1-wave1,
+#armoirie1-wave2 {
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#armoirie1-boat {
+    animation-name: boat-1;
+}
+
+#armoirie1-wave1,
+#armoirie1-wave2 {
+    animation-name: waves-1;
+}
+
+#armoirie1-sail1,
+#armoirie1-sail2,
+#armoirie1-sail3,
+#armoirie1-sail4,
+#armoirie1-sail5 {
+    animation-name: sail-1;
+}
+
+#armoirie1-sail5,
+#armoirie1-sail3,
+#armoirie1-sail1,
+#armoirie1-wave1 {
+    animation-direction: alternate;
+}
+
+#armoirie1-boat,
+#armoirie1-sail2,
+#armoirie1-sail4,
+#armoirie1-wave2 {
+    animation-direction: alternate-reverse;
+}
+
+#armoirie1-wave1 {
+    animation-duration: 1250ms;
+}
+
+#armoirie1-wave2 {
+    animation-duration: 900ms;
+}
+
+#armoirie1-sail1 {
+    animation-duration: 2350ms;
+}
+
+#armoirie1-sail2 {
+    animation-duration: 1150ms;
+}
+
+#armoirie1-sail3 {
+    animation-duration: 2050ms;
+}
+
+#armoirie1-sail4 {
+    animation-duration: 1650ms;
+}
+
+#armoirie1-sail5 {
+    animation-duration: 1850ms;
+}
+
+#armoirie1-boat {
+    animation-duration: 1400ms;
+}

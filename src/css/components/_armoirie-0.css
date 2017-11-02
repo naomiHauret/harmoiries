@@ -1,0 +1,102 @@
+/**
+*** Armoirie 0
+**/
+
+@keyframes waves-0 {
+    from {
+        transform: translate(0, -2px);
+    }
+    to {
+        transform: translate(-2px, 2px);
+    }
+}
+
+@keyframes duke-arm {
+    from {
+        transform: rotate(-2deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes duke-sword {
+    from {
+        transform: rotate(-2deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
+}
+
+#armoirie0-shield,
+#armoirie0-sword,
+#armoirie0-duke,
+#armoirie0-boat,
+#armoirie0-wave1,
+#armoirie0-wave2,
+#armoirie0-wave3,
+#armoirie0-arm {
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#armoirie0-shield,
+#armoirie0-duke,
+#armoirie0-boat,
+#armoirie0-wave1,
+#armoirie0-wave2,
+#armoirie0-wave3 {
+    animation-name: waves-0;
+}
+
+#armoirie0-arm {
+    animation-name: duke-arm;
+}
+
+#armoirie0-sword {
+    animation-name: duke-sword;
+}
+
+#armoirie0-wave1,
+#armoirie0-wave3 {
+    animation-direction: alternate-reverse;
+}
+
+#armoirie0-arm,
+#armoirie0-sword,
+#armoirie0-shield,
+#armoirie0-duke,
+#armoirie0-boat,
+#armoirie0-wave2 {
+    animation-direction: alternate;
+}
+
+#armoirie0-duke {
+    animation-duration: 1950ms;
+}
+
+#armoirie0-boat,
+#armoirie0-sword {
+    animation-duration: 1850ms
+}
+
+#armoirie0-arm {
+    animation-duration: 1750ms;
+}
+
+#armoirie0-shield {
+    animation-duration: 1850ms;
+}
+
+#armoirie0-wave1 {
+    animation-duration: 700ms;
+}
+
+#armoirie0-wave2 {
+    animation-duration: 1050ms;
+}
+
+#armoirie0-wave3 {
+    animation-duration: 850ms;
+}

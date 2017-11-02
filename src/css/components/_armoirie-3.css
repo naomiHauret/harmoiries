@@ -1,0 +1,35 @@
+@keyframes eagle {
+    from {
+        transform: translateY(0) rotate(0)
+    }
+    to {
+        transform: translateY(1px) rotate(1deg);
+    }
+}
+
+#armoirie3-eagle,
+#armoirie3-eagle2 {
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#armoirie3-eagle,
+#armoirie3-eagle2 {
+    animation-name: eagle;
+}
+
+#armoirie3-eagle {
+    animation-direction: alternate;
+}
+
+#armoirie3-eagle2 {
+    animation-direction: alternate-reverse;
+}
+
+#armoirie3-eagle {
+    animation-duration: 2250ms;
+}
+
+#armoirie3-eagle2 {
+    animation-duration: 1950ms;
+}
